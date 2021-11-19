@@ -8,6 +8,7 @@
   
   <title>Calculator App</title>
   <link rel="stylesheet" href="styles/styleSheet.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -29,34 +30,36 @@
           
       </div>
     </div>
-    <div class="screen">
-      Screen
+    <div class="screen-container">
+      <div class="screen">
+        <div class="previous-operand" data-previous-operand></div>
+        <div class="current-operand" data-current-operand></div>
+      </div>
     </div>
-
     <div class="buttons-container">
 
-        <button class="plain-button">7</button>
-        <button class="plain-button">8</button>
-        <button class="plain-button">9</button>
-        <button class="delete-button">DEL</button>
+        <button class="plain-button" data-number>7</button>
+        <button class="plain-button" data-number>8</button>
+        <button class="plain-button" data-number>9</button>
+        <button class="delete-button" data-delete>DEL</button>
 
-        <button class="plain-button">4</button>
-        <button class="plain-button">5</button>
-        <button class="plain-button">6</button>
-        <button class="plain-button">+</button>
+        <button class="plain-button" data-number>4</button>
+        <button class="plain-button" data-number>5</button>
+        <button class="plain-button" data-number>6</button>
+        <button class="plain-button" data-operation>+</button>
 
-        <button class="plain-button">1</button>
-        <button class="plain-button">2</button>
-        <button class="plain-button">3</button>
-        <button class="plain-button">-</button>
+        <button class="plain-button" data-number>1</button>
+        <button class="plain-button" data-number>2</button>
+        <button class="plain-button" data-number>3</button>
+        <button class="plain-button" data-operation>-</button>
 
-        <button class="plain-button">.</button>
-        <button class="plain-button">0</button>
-        <button class="plain-button">/</button>
-        <button class="plain-button">x</button>
+        <button class="plain-button" data-number>.</button>
+        <button class="plain-button" data-number>0</button>
+        <button class="plain-button" data-operation>/</button>
+        <button class="plain-button" data-operation>x</button>
 
-        <button class="reset-button">RESET</button>
-        <button class="equals-button">=</button>
+        <button class="reset-button" data-all-clear>RESET</button>
+        <button class="equals-button" data-equals>=</button>
   
     </div>
 

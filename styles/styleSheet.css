@@ -2,17 +2,11 @@
 
 body {
     background-color: hsl(222, 26%, 31%);
-    font-family: Spartan;
+    font-family: Spartan, sans-serif;
     width: 650px;
     margin: auto;
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
+
 .calculator-container {
     flex-direction: column;
     justify-content: center;
@@ -30,15 +24,30 @@ body {
 .theme-button {
     text-align: right;
 }
+.screen-container {
+    display: grid;
+    grid-template-rows: minmax(120px, auto);
+}
 .screen {
-    display: block;
-    padding: 20px;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    padding: 10px;
     background-color: hsl(224, 36%, 15%);
     border-radius: 12px;
-    margin: 20px 0px 20px 0px;
     color: white;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+.previous-operand {
+    font-size: 24px;
+}
+.current-operand {
     font-size: 32px;
-    text-align: right;
 }
 .buttons-container {
     display: grid;
