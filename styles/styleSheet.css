@@ -32,8 +32,8 @@ body {
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
-    min-height: 50px;
-    padding: 10px;
+    min-height: 80px;
+    padding: 20px;
     background-color: hsl(224, 36%, 15%);
     border-radius: 12px;
     color: white;
@@ -42,6 +42,7 @@ body {
     word-wrap: break-word;
     word-break: break-all;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .previous-operand {
     font-size: 24px;
